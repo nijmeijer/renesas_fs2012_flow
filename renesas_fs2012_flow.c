@@ -34,8 +34,8 @@ static int RENESAS_FS2012_read_word(struct RENESAS_FS2012_dev *RENESAS_FS2012, u
 	const struct device *dev = &client->dev;
 	__be16 be_val;
 	int ret;
-         char buf[5];
-         struct i2c_msg msg_resp = {
+        char buf[5];
+        struct i2c_msg msg_resp = {
 		.addr = client->addr,
 		.flags =  I2C_M_RD,
 		.len = sizeof(be_val),
